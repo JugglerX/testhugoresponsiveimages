@@ -1,0 +1,13 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+[module]
+  [[module.imports]]
+    path = 'github.com/future-wd/hugo-responsive-images'
+
+[params]
+
+[permalinks]
+  posts = "posts/:title/"
+  pages = ":slug/"
