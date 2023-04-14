@@ -1,3 +1,13 @@
 {{ define "main" }}
+    <h1>{{ .Title }}</h1>
     {{ .Content }}
+    <h2>Pages</h2>
+    <ul>
+      <!-- Ranges through content/posts/*.md -->
+      {{ range .Pages }}
+        <li>
+          <a href="{{ .Permalink }}"> {{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
 {{ end }}

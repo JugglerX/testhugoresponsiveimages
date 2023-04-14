@@ -8,6 +8,6 @@ title = 'My New Hugo Site'
 
 [params]
 
-[permalinks]
-  posts = "posts/:title/"
-  pages = ":slug/"
+#[permalinks]
+#  posts = "posts/:title/"
+#  pages = ":slug/"
