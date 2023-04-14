@@ -1,13 +1,15 @@
-
 {{ define "main" }}
-    <div class="summary">
-{{ .Params.thumbnail }}
+<h1>{{ .Title }}</h1>
+<div class="summary">
+{{ with .Params.thumbnail }}
+{{ . }}
 {{ partial "img" (dict
-"ctx" .
-"src" .Params.thumbnail
+"ctx" $
+"src" .
 "width" 300
 "alt" "Test image"
 )}}
-    </div>
-    <div class="content">{{ .Content }}</div>
+{{ end }}
+</div>
+<div class="content">{{ .Content }}</div>
 {{ end }}

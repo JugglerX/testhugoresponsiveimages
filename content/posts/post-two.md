@@ -1,7 +1,7 @@
 ---
-title: "test post"
-slug: "test-post"
-thumbnail: "images/blog-1.webp"
+title: "test post two - global resource in assets"
+# slug: "test-post"
+thumbnail: "assets/images/blog-1.webp"
 ---
 
 Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
